@@ -7,7 +7,7 @@ import "fmt"
 // And one more.
 //
 // Example:
-//  f := &File{
+//  f := &Foo{
 //    A: "a-field",
 //    B: "b-field",
 //  }
@@ -19,6 +19,10 @@ type Foo struct {
 	B string
 }
 
+// Bar documentation.
+// Example:
+//   foo := &Foo{}
+//   foo.Bar()
 func (f *Foo) Bar() {
 	fmt.Println("Bar method")
 }
