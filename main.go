@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 // File type.
 // Another line.
 // And one more.
@@ -15,4 +17,8 @@ type File struct {
 
 	// B field doc
 	B string
+}
+
+func main() {
+	fmt.Println("hello")
 }
