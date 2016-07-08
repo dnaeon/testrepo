@@ -26,3 +26,13 @@ type Foo struct {
 func (f *Foo) Bar() {
 	fmt.Println("Bar method")
 }
+
+// File type resource manages files and directories.
+//
+// Example usage:
+//   foo = file.new("/tmp/foo")
+//   foo.state = "present"
+//   foo.mode = 0600
+//   catalog:add(foo)
+//
+type File struct{}
